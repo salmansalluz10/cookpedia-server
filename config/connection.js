@@ -1,6 +1,6 @@
 const mongoose = require("mongoose")
 
-const connectionString = process.env.connectionString
+const connectionString = process.env.CONNECTIONSTRING
 
 mongoose.connect(connectionString).then((res)=>{
     console.log("MongoDB Atlas connection successfull");
